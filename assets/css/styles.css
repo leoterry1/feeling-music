@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway";
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+/*HEADER*/
+header {
+    background-color: #000;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 2%;
+    align-items: center;
+    height: 50px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header h1 {
+    justify-self: self-start;
+    color: #fff;
+    padding: 0;
+}
+
+header .desktop ul {
+    display: flex;
+    list-style: none;
+}
+
+header .desktop ul li {
+    font-size: 20px;
+    margin: 20px;
+}
+
+header .mobile {
+    display: none;
+}
+
+/*MAIN*/
+.fondo {
+    background-image: url(../img/main-bg.jpg);
+    background-attachment: fixed ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    padding: 10%;
+    margin-bottom: 0;
+    z-index: -1;
+}
+
+div .saludo {
+    text-align: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    width: 35%;
+    border-radius: 25px;
+    margin-top: 8%;
+
+}
+
+div .saludo h2 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 40px;
+
+}
+
+div .saludo p {
+    color: #fff;
+    font-size: 20px;
+}
+
+div .saludo i {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+div .saludo i:hover {
+    transform: translateY(10px);
+    color: #000;
+}
+
+/*ARTISTAS */
+.skew{
+    width: 100%;
+    padding: 55% 0;
+    transform: skew(0deg, -3deg);
+    background-color: #000;
+    z-index: 1;
+    position: absolute;
+    margin-top: -2%;
+}
+
+.artistas {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 5%;
+}
+.artistas h2 {
+    color: #fff;
+    padding-top: 10%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.artistas .artista {
+    display: flex;
+}
+
+.artistas .artista img {
+    width: 25%;
+    margin-left: 2%;
+}
+
+.artistas .artista h3 {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 5%;
+
+}
+
+.artistas .artista p {
+    color: white;
+    margin-left: 5%;
+    margin-right: 20%;
+    
+    
+}
+
+.artistas .artista-right {
+    display: flex;
+    text-align: right;
+}
+
+.artistas .artista-right img {
+    width: 25%;
+    margin-right: 2%;
+}
+
+.artistas .artista-right h3 {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 5%;
+}
+
+.artistas .artista-right p {
+    color: white;
+    margin-right: 5%;
+    margin-left: 20%;
+}
+.artistas .artista, .artistas .artista-right{
+    margin-bottom: 5% 
+}
+
+/*NOTICIAS*/
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    z-index: 1;
+}
+.noticias {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -1;
+    background-color: #fff;
+    
+
+}
+
+
+.noticias .noticia{
+    width: 20%;
+    margin: 5%;
+    text-align: center;
+}
+.noticias .noticia img{
+    width: 100%;
+}
+.noticias .noticia h3{
+    font-size: 30px;
+}
+
+/*CONTACTO */
+
+.contacto{
+    background-color: #000;
+    z-index: 1;
+    color: #fff;
+    margin-bottom: 0;
+    padding-bottom: 5%;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 2%;
+}
+.contacto h2{
+    text-align: center;
+    font-size: 50px;
+}
+.contacto p{
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+.contacto h4{
+    text-align: center;
+    font-weight: 200;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.contacto input{
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-left: 25%;
+}
+.contacto textarea{
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.contacto form button{
+    margin-left: 40%;
+    width: 20%;
+    margin-top: 2%;
+    padding: 1% 2%;
+    color: white;
+    background-color: #000;
+    border: 2px solid #fff;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+/*FOOTER */
+
+footer{
+    color: #fff;
+    background-color: #000;
+    margin-top: 0;
+    text-align: center;
+
+}
+footer hr{
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin-left: 10%;
+}
+footer p{
+    padding: 0;
+    margin: 0;
+
+}
+footer i{
+    font-size: 40px;
+    margin: 30px;
+}
