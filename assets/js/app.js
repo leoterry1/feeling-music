@@ -16,13 +16,16 @@ window.onscroll = () => {
     if (prevScroll >= actualScroll) {
         document.querySelector(".navbar").style.top = "0px";
         document.querySelector(".navbar").style.position = "sticky";
-        btnUp.style.display = "inline-block"
-        btnUp.style.right = "30px";
+        btnUp.style.right = "-60px"
+        
 
 
     } else {
         document.querySelector(".navbar").style.top = "-200px";
-        btnUp.style.right = "-60px"
+        
+        btnUp.style.display = "inline-block"
+        btnUp.style.right = "30px";
+        
 
     }
     prevScroll = actualScroll
