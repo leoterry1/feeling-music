@@ -17,6 +17,9 @@ header {
     padding: 0 2%;
     align-items: center;
     height: 50px;
+    z-index: 1;
+    transition: top 0.5s;
+
 }
 
 header a {
@@ -95,18 +98,21 @@ div .saludo i:hover {
 /*ARTISTAS */
 .skew{
     width: 100%;
-    padding: 55% 0;
+    padding: 10% 0;
     transform: skew(0deg, -3deg);
     background-color: #000;
-    z-index: 1;
+    z-index: -1;
     position: absolute;
-    margin-top: -2%;
+    margin-top: -40px;
 }
 
 .artistas {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     padding-bottom: 5%;
+    margin-top: -70px;
+    background-color: #000;
+    margin-bottom: -40px;
 }
 .artistas h2 {
     color: #fff;
@@ -165,18 +171,28 @@ div .saludo i:hover {
 }
 
 /*NOTICIAS*/
+.skew1{
+    width: 100%;
+    padding: 5% 0;
+    transform: skew(0deg, -3deg);
+    background-color: #000;
+    z-index: -1;
+    position: absolute;
+    margin-top: -30px;
+}
 
 .title{
     text-align: center;
     font-size: 50px;
     z-index: 1;
+    margin-top: 20%;
 }
 .noticias {
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    z-index: -1;
+    z-index: 0;
     background-color: #fff;
     
 
@@ -196,7 +212,14 @@ div .saludo i:hover {
 }
 
 /*CONTACTO */
-
+.skew2{
+    width: 100%;
+    padding: 5% 0;
+    transform: skew(0deg, -3deg);
+    background-color: #000;
+    z-index: 0;
+    position: absolute;
+}
 .contacto{
     background-color: #000;
     z-index: 1;
@@ -207,6 +230,7 @@ div .saludo i:hover {
     width: 100%;
     margin: auto;
     padding-top: 2%;
+    margin-top: 5%;
 }
 .contacto h2{
     text-align: center;
@@ -274,4 +298,21 @@ footer p{
 footer i{
     font-size: 40px;
     margin: 30px;
+}
+
+/*IR ARRIBA */
+ 
+.fa-arrow-circle-up{
+    color: #000;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    bottom: 60px;
+    right: 10px;
+    transition: 0.5s ease-in-out;
+    display: none;
+
 }
