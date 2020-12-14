@@ -37,3 +37,19 @@ window.onscroll = () => {
 btnUp.addEventListener("click", () => {
     window.scrollTo({ left: 0, top: 0, behavior: "smooth" })
 })
+
+
+//Menu
+
+let menu = document.querySelector(".mobile")
+let btnMenu = document.querySelector(".fa-bars")
+let show = true
+btnMenu.addEventListener("click", ()=>{
+    if (show){
+        menu.style.transform = "translate(5%, 0)";
+        show = false
+    }else{
+        menu.style.transform = "translate(100%, 0%)";
+        show = true
+    }
+})

@@ -4,9 +4,8 @@
 
 body {
     font-family: "Raleway";
-    width: 100%;
-    margin: auto;
-    height: 100%;
+    width: 100vw;
+   
 }
 
 /*HEADER*/
@@ -43,14 +42,17 @@ header .desktop ul li {
     margin: 20px;
 }
 
-header .mobile {
+.mobile {
     display: none;
+}
+header i{
+    display: none
 }
 
 /*MAIN*/
 .fondo {
     background-image: url(../img/main-bg.jpg);
-    background-attachment: fixed ;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1500px;
@@ -64,22 +66,23 @@ div .saludo {
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
     margin: auto;
-    width: 35%;
+    width: 50%;
     border-radius: 25px;
     margin-top: 8%;
+    padding: 3%;
 
 }
 
 div .saludo h2 {
     font-weight: 400;
     color: #fff;
-    font-size: 40px;
+    font-size: 2rem;
 
 }
 
 div .saludo p {
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 div .saludo i {
@@ -96,7 +99,7 @@ div .saludo i:hover {
 }
 
 /*ARTISTAS */
-.skew{
+.skew {
     width: 100%;
     padding: 10% 0;
     transform: skew(0deg, -3deg);
@@ -114,6 +117,7 @@ div .saludo i:hover {
     background-color: #000;
     margin-bottom: -40px;
 }
+
 .artistas h2 {
     color: #fff;
     padding-top: 10%;
@@ -141,8 +145,8 @@ div .saludo i:hover {
     color: white;
     margin-left: 5%;
     margin-right: 20%;
-    
-    
+
+
 }
 
 .artistas .artista-right {
@@ -166,12 +170,14 @@ div .saludo i:hover {
     margin-right: 5%;
     margin-left: 20%;
 }
-.artistas .artista, .artistas .artista-right{
-    margin-bottom: 5% 
+
+.artistas .artista,
+.artistas .artista-right {
+    margin-bottom: 5%
 }
 
 /*NOTICIAS*/
-.skew1{
+.skew1 {
     width: 100%;
     padding: 5% 0;
     transform: skew(0deg, -3deg);
@@ -181,12 +187,13 @@ div .saludo i:hover {
     margin-top: -30px;
 }
 
-.title{
+.title {
     text-align: center;
     font-size: 50px;
     z-index: 1;
     margin-top: 20%;
 }
+
 .noticias {
     display: flex;
     margin: auto;
@@ -194,25 +201,31 @@ div .saludo i:hover {
     justify-content: space-between;
     z-index: 0;
     background-color: #fff;
-    
+
 
 }
 
 
-.noticias .noticia{
+.noticias .noticia {
     width: 20%;
-    margin: 5%;
+    margin: 3%;
     text-align: center;
 }
-.noticias .noticia img{
+
+.noticias .noticia p {
+    text-align: justify;
+}
+
+.noticias .noticia img {
     width: 100%;
 }
-.noticias .noticia h3{
+
+.noticias .noticia h3 {
     font-size: 30px;
 }
 
 /*CONTACTO */
-.skew2{
+.skew2 {
     width: 100%;
     padding: 5% 0;
     transform: skew(0deg, -3deg);
@@ -220,7 +233,8 @@ div .saludo i:hover {
     z-index: 0;
     position: absolute;
 }
-.contacto{
+
+.contacto {
     background-color: #000;
     z-index: 1;
     color: #fff;
@@ -232,22 +246,26 @@ div .saludo i:hover {
     padding-top: 2%;
     margin-top: 5%;
 }
-.contacto h2{
+
+.contacto h2 {
     text-align: center;
     font-size: 50px;
 }
-.contacto p{
+
+.contacto p {
     text-align: center;
     margin: auto;
     font-size: 25px;
 }
-.contacto h4{
+
+.contacto h4 {
     text-align: center;
     font-weight: 200;
     font-size: 25px;
     margin-bottom: 5px;
 }
-.contacto input{
+
+.contacto input {
     text-align: center;
     width: 50%;
     height: 30px;
@@ -256,14 +274,16 @@ div .saludo i:hover {
     outline: none;
     margin-left: 25%;
 }
-.contacto textarea{
+
+.contacto textarea {
     margin-left: 25%;
     width: 50%;
     border-radius: 10px;
     border: none;
     outline: none;
 }
-.contacto form button{
+
+.contacto form button {
     margin-left: 40%;
     width: 20%;
     margin-top: 2%;
@@ -277,32 +297,35 @@ div .saludo i:hover {
 
 /*FOOTER */
 
-footer{
+footer {
     color: #fff;
     background-color: #000;
     margin-top: 0;
     text-align: center;
 
 }
-footer hr{
+
+footer hr {
     padding: 0;
     margin: 0;
     width: 80%;
     margin-left: 10%;
 }
-footer p{
+
+footer p {
     padding: 0;
     margin: 0;
 
 }
-footer i{
+
+footer i {
     font-size: 40px;
     margin: 30px;
 }
 
 /*IR ARRIBA */
- 
-.fa-arrow-circle-up{
+
+.fa-arrow-circle-up {
     color: #000;
     background-color: #fff;
     border-radius: 50px;
@@ -315,4 +338,256 @@ footer i{
     transition: 0.5s ease-in-out;
     display: none;
 
+}
+
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header .desktop ul li {
+        font-size: 1rem;
+    }
+
+    div .saludo {
+        width: 50%;
+        padding: 0;
+        margin-bottom: 5%;
+    }
+
+    .artistas {
+        padding-bottom: 0;
+    }
+
+    .artistas .artista img,
+    .artistas .artista-right img {
+        width: 30%;
+        height: 30%;
+    }
+
+    .artistas .artista h3,
+    .artistas .artista-right h3 {
+        color: #fff;
+        font-size: 2rem;
+        margin-left: 5%;
+
+    }
+
+    .artistas .artista p,
+    .artistas .artista-right p {
+        font-size: 1rem;
+
+    }
+
+    .artistas .artista-right img {
+        margin-right: 30px;
+    }
+
+    .noticias {
+        display: inline-block;
+        align-items: center;
+        margin: auto;
+    }
+
+    .noticias .noticia {
+        width: 50%;
+        margin: auto;
+    }
+
+    .contacto p,
+    .contacto h4 {
+        font-size: 1rem;
+    }
+
+    .contacto form button {
+        font-size: 1rem;
+    }
+
+    footer i {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar .desktop {
+        display: none;
+    }
+
+    div .saludo {
+        width: 80%;
+        padding: 0;
+        margin-bottom: 15%;
+    }
+
+    .artistas .artista-right {
+        display: none;
+    }
+
+    .artistas {
+        align-items: center;
+        margin: 5% auto;
+        width: 100%;
+        padding-bottom: 10%;
+        margin-bottom: -2px;
+    }
+
+    .artistas h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .artistas .artista {
+        display: inline-block;
+        align-items: center;
+        margin: auto;
+        margin-top: 3%;
+        padding: 0;
+    }
+
+    .artistas .artista img {
+        width: 44%;
+        height: 44%;
+        margin: auto;
+        margin-left: 30%;
+        margin-bottom: 2%;
+    }
+
+    .artistas .artista h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1%;
+        padding: 0;
+        margin-left: 4%;
+        margin-top: 0;
+    }
+
+    .artistas .artista p {
+        font-size: 0.8rem;
+        text-align: left;
+        margin: 0 4%;
+    }
+
+    .sepArt {
+        width: 75%;
+        text-align: center;
+        margin: 5% auto;
+    }
+
+    .skew1 {
+        padding: 10%;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+    .noticias .noticia {
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .noticias .noticia img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .noticias .noticia h3 {
+        font-size: 1.5rem;
+    }
+
+    .noticias .noticia p {
+        margin: auto;
+        width: 100%;
+    }
+
+    .contacto h2 {
+        font-size: 2rem;
+    }
+
+    .contacto p {
+        font-size: 0.8rem;
+    }
+
+    .contacto form h4 {
+        font-size: 0.8rem;
+    }
+
+    .contacto form button {
+        font-size: 0.8rem;
+        padding: auto;
+    }
+
+    footer i {
+        font-size: 1.2rem;
+    }
+
+    .mobile {
+        position: fixed;
+        z-index:15;
+        display: block;
+        right: 0;
+        font-size: 1.8rem;
+        cursor: pointer;
+        padding: 10%;
+        padding-right: 2%;
+        margin-right: 2%;
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 2%;
+        transition: 0.5s ease-in-out;
+        transform: translate(100%, 0%)
+
+    }
+
+    .mobile ul {
+        list-style: none;
+        margin-top: 0;
+        padding-top: 0;
+        text-align: right;
+        padding-right: 0;
+        margin-right: 0;
+        
+
+    }
+
+    .mobile ul li {
+        margin-bottom: 30px;
+        background-color: rgba(0,0,0,0.5);
+
+
+    }
+
+    .mobile ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+
+    }
+
+    .mobile ul li .renglon {
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    header .fa-bars {
+        color: #fff;
+        display: block;
+        margin-right: 10px;
+        z-index: 10;
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 450px) {
+    .artistas .artista-mobile {
+        display: none;
+    }
+
+    .sepArt {
+        display: none;
+    }
 }
